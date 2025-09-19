@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Name>Beef's Rover Fixes</Name>
+    <Author>TheRealBeef</Author>
+    <Version>2.0.0</Version>
+
+    <Description>
+        [h1]Beef's Rover Fixes[/h1]
+        [b]WARNING:[/b] This is a StationeersLaunchPad Plugin Mod. It requires BepInEx to be installed with the StationeersLaunchPad plugin.
+        See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
+
+        - Changes to Rover max speed and torque values. Felt like the rover was useless once you had Hardsuit jetpack because it was so slow? Frustrated because a single 22.5 degree slope could stall out your sophisticicated space-exploring rover? Now you can explore much better. You don't even have to worry about falling off the edge of the map anymore like the old version...probably
+        - Default Settings are now 40m/s maximum speed and 2x torque of vanilla. Adjustable under BepInEx/configs once you run the game once.
+
+        Source Code: https://github.com/TheRealBeef/Beefs-Stationeers-Rover-Fixes
+    </Description>
+
+    <ChangeLog>
+        2.0.0:
+        - Complete rewrite to update to current Stationeers.
+        - Add shrinking collider for seat interactions
+        - Add traction control
+    </ChangeLog>
+
+
+    <Tags>
+        <Tag>QoL</Tag>
+        <Tag>Rover</Tag>
+        <Tag>BepInEx</Tag>
+        <Tag>StationeersLaunchPad</Tag>
+    </Tags>
+
+    <Dependencies />
+
+    <LoadBefore />
+    <LoadAfter />
+    <InGameDescription>
+        <![CDATA[
+<size=30><color=#ffa500>Longer Orbital Periods</color></size>
+<b>WARNING:</b> <color=#ff0000>This is a StationeersLaunchPad Plugin Mod. It requires BepInEx to be installed.</color>
+See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
+
+        - Changes to Rover max speed and torque values. Felt like the rover was useless once you had Hardsuit jetpack because it was so slow? Frustrated because a single 22.5 degree slope could stall out your sophisticicated space-exploring rover? Now you can explore much better. You don't even have to worry about falling off the edge of the map anymore like the old version...probably
+        - Default Settings are now 40m/s maximum speed and 2x torque of vanilla. Adjustable under BepInEx/configs once you run the game once.
+
+        Source Code: https://github.com/TheRealBeef/Beefs-Stationeers-Rover-Fixes
+]]>
+    </InGameDescription>
+</ModMetadata>
