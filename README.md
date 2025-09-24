@@ -25,6 +25,9 @@ You can configure the multipliers in the StationeersLaunchPad config.
 
 ## Changelog
 
+>### Version 2.0.1
+> - Fix some typos - thanks Tallinu!
+
 >### Version 2.0.0
 > - Complete rewrite to update to current Stationeers.
 > - Add shrinking collider for seat interactions
@@ -37,4 +40,4 @@ Nothing for now, about as complete as it needs to be
 ## Source Code
 
 The source code is available on GitHub:
-[https://github.com/TheRealBeef/Stationeers-Longer-Orbital-Periods](https://github.com/TheRealBeef/Stationeers-Longer-Orbital-Periods)
+[https://github.com/TheRealBeef/Beefs-Stationeers-Rover-Fixes](https://github.com/TheRealBeef/Beefs-Stationeers-Rover-Fixes)
