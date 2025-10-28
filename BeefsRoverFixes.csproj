@@ -7,6 +7,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <RootNamespace>BeefsRoverFixes</RootNamespace>
+        <NoWarn>MSB3277</NoWarn>
     </PropertyGroup>
 
     <PropertyGroup>

@@ -35,7 +35,12 @@ You can configure the multipliers in the StationeersLaunchPad config.
 
 ## Roadmap
 
-Nothing for now, about as complete as it needs to be
+- [ ] returning the 5 steel and plastic sheets on disassembly (Thanks Aedda)
+- [ ] option to make it unaffected by storms (Thanks Aedda)
+- [ ] Per world or gravity-dependent settings
+- [ ] Additional gravity (like 20%?) for rover to feel less floaty?
+- [ ] Third person camera fixes
+- [ ] Figure out/solve the "lingering" movement - where it continues in last movement direction forwards or back for a moment when pressing the other direction
 
 ## Source Code
 
