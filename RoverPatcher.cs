@@ -28,6 +28,8 @@ namespace BeefsRoverFixes
             __instance.MaxSpeed = BeefsRoverFixesPlugin.MaxSpeed.Value;
             __instance.MotorPower = BeefsRoverFixesPlugin.MotorPower.Value;
             __instance.BrakePower = BeefsRoverFixesPlugin.BrakePower.Value;
+            __instance.WeatherDamageScale = BeefsRoverFixesPlugin.StormDamageScaling.Value;
+
 
             ApplyTractionFixes(__instance);
 

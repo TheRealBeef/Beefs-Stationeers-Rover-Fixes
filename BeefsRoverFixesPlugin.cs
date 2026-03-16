@@ -22,6 +22,7 @@ namespace BeefsRoverFixes
         public static ConfigEntry<AdditionalGravityMode> AdditionalGravity;
         public static ConfigEntry<float> AdditionalGravityStrength;
         public static ConfigEntry<bool> StormImmunity;
+        public static ConfigEntry<float> StormDamageScaling;
         public static ConfigEntry<bool> CameraOrbitEnabled;
         public static ConfigEntry<float> CameraOrbitSensitivity;
         public static ConfigEntry<float> CameraMinZoom;
@@ -78,6 +79,12 @@ namespace BeefsRoverFixes
                 false,
                 "Make rovers immune to storm wind forces and weather damage. " +
                 "When enabled, storms will not push rovers or damage them.");
+
+            StormDamageScaling = Config.Bind("Storm",
+                "StormDamageScaling",
+                1.0f,
+                "Scale damage done to rovers during storm. " +
+                "Percentage scale where 1 = 100% damage.");
 
             CameraOrbitEnabled = Config.Bind("Camera",
                 "CameraOrbitEnabled",
