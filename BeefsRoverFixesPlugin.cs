@@ -23,6 +23,7 @@ namespace BeefsRoverFixes
         public static ConfigEntry<float> AdditionalGravityStrength;
         public static ConfigEntry<bool> StormImmunity;
         public static ConfigEntry<float> StormDamageScaling;
+        public static ConfigEntry<float> StormWindScaling;
         public static ConfigEntry<bool> CameraOrbitEnabled;
         public static ConfigEntry<float> CameraOrbitSensitivity;
         public static ConfigEntry<float> CameraMinZoom;
@@ -84,6 +85,12 @@ namespace BeefsRoverFixes
                 "StormDamageScaling",
                 1.0f,
                 "Scale damage done to rovers during storm. " +
+                "Percentage scale where 1 = 100% damage.");
+
+            StormWindScaling = Config.Bind("Storm",
+                "StormWindScaling",
+                1.0f,
+                "Scale storm wind force on rovers. " +
                 "Percentage scale where 1 = 100% damage.");
 
             CameraOrbitEnabled = Config.Bind("Camera",
