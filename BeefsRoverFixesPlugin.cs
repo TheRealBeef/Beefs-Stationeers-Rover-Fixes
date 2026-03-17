@@ -91,7 +91,7 @@ namespace BeefsRoverFixes
                 "StormWindScaling",
                 1.0f,
                 "Scale storm wind force on rovers. " +
-                "Percentage scale where 1 = 100% damage.");
+                "Percentage scale where 1 = 100% force.");
 
             CameraOrbitEnabled = Config.Bind("Camera",
                 "CameraOrbitEnabled",
