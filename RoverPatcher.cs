@@ -28,6 +28,7 @@ namespace BeefsRoverFixes
             __instance.MaxSpeed = BeefsRoverFixesPlugin.MaxSpeed.Value;
             __instance.MotorPower = BeefsRoverFixesPlugin.MotorPower.Value;
             __instance.BrakePower = BeefsRoverFixesPlugin.BrakePower.Value;
+            __instance.WeatherDamageScale = BeefsRoverFixesPlugin.StormDamageScaling.Value;
 
             ApplyTractionFixes(__instance);
 
@@ -196,6 +197,16 @@ namespace BeefsRoverFixes
     [HarmonyPatch(typeof(DynamicThing))]
     public static class StormPatcher
     {
+        [HarmonyPatch("GetStormWindVector")]
+        [HarmonyPostfix]
+        public static Vector3 GetStormWindVector_Postfix(Vector3 __result, DynamicThing __instance)
+        {
+            if(__instance is Rover){
+                return __result * BeefsRoverFixesPlugin.StormWindScaling.Value;
+            }
+            return __result;
+        }
+
         [HarmonyPatch("CanBeExposedToStorm")]
         [HarmonyPrefix]
         public static bool CanBeExposedToStorm_Prefix(DynamicThing __instance, ref bool __result)
