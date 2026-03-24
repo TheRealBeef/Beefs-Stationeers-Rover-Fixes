@@ -10,6 +10,7 @@
 - Lingering movement fix — no more creeping forward when you try to reverse
 - Additional gravity for rover as a percentage of Earth gravity to prevent floaty controls
 - Storm immunity option — blocks wind forces and weather damage (disabled by default)
+- Adjustable values for wind strength on rover and storm damage to rover (Thanks to StormCircuit for this functionality)
 - Orbit camera in third person with mouse look, scroll zoom, etc
 - Camera auto-returns behind the rover after a few seconds when driving forward with no mouse input
 - Middle-click resets camera position and zoom
@@ -30,6 +31,9 @@ See: [https://github.com/StationeersLaunchPad/StationeersLaunchPad](https://gith
 You can configure the multipliers in the StationeersLaunchPad config.
 
 ## Changelog
+>### Version 2.1.1:
+>- Added storm wind strength scaling option (StormCircuit's work, thanks for PR)
+>- Added storm damage strength scaling option (StormCircuit's work, thanks for PR)
 
 >### Verison 2.1.0:
 >- Fixes weird lingering movement bug (where rover keeps going forwards when you press backwards)

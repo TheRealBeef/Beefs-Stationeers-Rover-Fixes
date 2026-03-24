@@ -2,7 +2,7 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Name>Beef's Rover Fixes</Name>
     <Author>TheRealBeef</Author>
-    <Version>2.1.0</Version>
+    <Version>2.1.1</Version>
 
     <Description>
         [h1]Beef's Rover Fixes[/h1]
@@ -15,6 +15,7 @@
         - Lingering movement fix — no more creeping forward when you try to reverse
         - Additional gravity for rover as a percentage of Earth gravity to prevent floaty controls
         - Storm immunity option — blocks wind forces and weather damage (disabled by default)
+        - Adjustable values for wind strength on rover and storm damage to rover (Thanks to StormCircuit for this functionality)
         - Orbit camera in third person with mouse look, scroll zoom, etc
         - Camera auto-returns behind the rover after a few seconds when driving forward with no mouse input
         - Middle-click resets camera position and zoom
@@ -25,6 +26,10 @@
     </Description>
 
     <ChangeLog>
+        v2.1.1:
+        - Added storm wind strength scaling option (StormCircuit's work, thanks for PR)
+        - Added storm damage strength scaling option (StormCircuit's work, thanks for PR)
+
         2.1.0:
         - Fixes weird lingering movement bug (where rover keeps going forwards when you press backwards)
         - Now can add extra "artificial" gravity to rover as % of earth gravity to add in mod config - no more floating in the sky forever
@@ -64,6 +69,16 @@ See: https://github.com/StationeersLaunchPad/StationeersLaunchPad
 
         - Changes to Rover max speed and torque values. Felt like the rover was useless once you had Hardsuit jetpack because it was so slow? Frustrated because a single 22.5 degree slope could stall out your sophisticicated space-exploring rover? Now you can explore much better. You don't even have to worry about falling off the edge of the map anymore like the old version...probably
         - Default Settings are now 40m/s maximum speed and 2x torque of vanilla. Adjustable under BepInEx/configs once you run the game once.
+        - Seat collider fix for oversized interaction zones
+        - Lingering movement fix — no more creeping forward when you try to reverse
+        - Additional gravity for rover as a percentage of Earth gravity to prevent floaty controls
+        - Storm immunity option — blocks wind forces and weather damage (disabled by default)
+        - Adjustable values for wind strength on rover and storm damage to rover (Thanks to StormCircuit for this functionality)
+        - Orbit camera in third person with mouse look, scroll zoom, etc
+        - Camera auto-returns behind the rover after a few seconds when driving forward with no mouse input
+        - Middle-click resets camera position and zoom
+
+        You can configure things in mod config
 
         Source Code: https://github.com/TheRealBeef/Beefs-Stationeers-Rover-Fixes
 ]]>

@@ -3,7 +3,7 @@
         <TargetFramework>netstandard2.1</TargetFramework>
         <AssemblyTitle>BeefsRoverFixes</AssemblyTitle>
         <Product>BeefsRoverFixes</Product>
-        <Version>2.1.0</Version>
+        <Version>2.1.1</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <LangVersion>latest</LangVersion>
         <RootNamespace>BeefsRoverFixes</RootNamespace>

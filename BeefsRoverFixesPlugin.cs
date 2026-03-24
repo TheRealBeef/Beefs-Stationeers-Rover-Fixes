@@ -78,20 +78,25 @@ namespace BeefsRoverFixes
             StormImmunity = Config.Bind("Storm",
                 "StormImmunity",
                 false,
-                "Make rovers immune to storm wind forces and weather damage. " +
-                "When enabled, storms will not push rovers or damage them.");
+                "Make rovers immune to storm wind forces and weather damage.\n" +
+                "When enabled, storms will not push rovers or damage them.\n" +
+                "Overrides storm and wind scaling settings if enabled.");
 
             StormDamageScaling = Config.Bind("Storm",
                 "StormDamageScaling",
                 1.0f,
-                "Scale damage done to rovers during storm. " +
-                "Percentage scale where 1 = 100% damage.");
+                new ConfigDescription(
+                    "Scale damage done to rovers during storm. " +
+                "Percentage scale where 1 = 100% damage.",
+                    new AcceptableValueRange<float>(0.0f, 2.0f)));
 
             StormWindScaling = Config.Bind("Storm",
                 "StormWindScaling",
                 1.0f,
-                "Scale storm wind force on rovers. " +
-                "Percentage scale where 1 = 100% force.");
+                new ConfigDescription(
+                    "Scale storm wind force on rovers. " +
+                "Percentage scale where 1 = 100% force.",
+                    new AcceptableValueRange<float>(0.0f, 2.0f)));
 
             CameraOrbitEnabled = Config.Bind("Camera",
                 "CameraOrbitEnabled",

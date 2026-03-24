@@ -28,7 +28,8 @@ namespace BeefsRoverFixes
             __instance.MaxSpeed = BeefsRoverFixesPlugin.MaxSpeed.Value;
             __instance.MotorPower = BeefsRoverFixesPlugin.MotorPower.Value;
             __instance.BrakePower = BeefsRoverFixesPlugin.BrakePower.Value;
-            __instance.WeatherDamageScale = BeefsRoverFixesPlugin.StormDamageScaling.Value;
+            if (!BeefsRoverFixesPlugin.StormImmunity.Value)
+                __instance.WeatherDamageScale = BeefsRoverFixesPlugin.StormDamageScaling.Value;
 
             ApplyTractionFixes(__instance);
 
@@ -202,6 +203,8 @@ namespace BeefsRoverFixes
         public static Vector3 GetStormWindVector_Postfix(Vector3 __result, DynamicThing __instance)
         {
             if(__instance is Rover){
+                if (BeefsRoverFixesPlugin.StormImmunity.Value)
+                    return Vector3.zero;
                 return __result * BeefsRoverFixesPlugin.StormWindScaling.Value;
             }
             return __result;
