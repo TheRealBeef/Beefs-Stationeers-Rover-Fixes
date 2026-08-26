@@ -31,6 +31,10 @@ See: [https://github.com/StationeersLaunchPad/StationeersLaunchPad](https://gith
 You can configure the multipliers in the StationeersLaunchPad config.
 
 ## Changelog
+>### Version v2.1.2:
+> - Fix loading on linux (about.xml -> About.xml)
+> - Rebuild against Power Line update
+
 >### Version 2.1.1:
 >- Added storm wind strength scaling option (StormCircuit's work, thanks for PR)
 >- Added storm damage strength scaling option (StormCircuit's work, thanks for PR)

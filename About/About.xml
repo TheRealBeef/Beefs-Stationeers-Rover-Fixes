@@ -2,7 +2,7 @@
 <ModMetadata xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Name>Beef's Rover Fixes</Name>
     <Author>TheRealBeef</Author>
-    <Version>2.1.1</Version>
+    <Version>2.1.2</Version>
 
     <Description>
         [h1]Beef's Rover Fixes[/h1]
@@ -26,6 +26,10 @@
     </Description>
 
     <ChangeLog>
+        v2.1.2:
+        - Fix loading on linux (about.xml -> About.xml)
+        - Rebuild against Power Line update
+
         v2.1.1:
         - Added storm wind strength scaling option (StormCircuit's work, thanks for PR)
         - Added storm damage strength scaling option (StormCircuit's work, thanks for PR)
